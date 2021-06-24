@@ -1,0 +1,134 @@
+.searchPage_header {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  background-color: white;
+
+  border-bottom: 0.5px solid rgb(219, 219, 219);
+}
+
+.searchPage_logo {
+  width: 130px;
+  margin: 20px;
+}
+
+.searchPage_header .search_input {
+  margin-top: 20px;
+  height: 25px;
+  width: 40vw;
+  max-width: unset;
+  box-shadow: rgb(184, 184, 184) 2px 2px 12px;
+  transition: transform 0.2s ease-in-out;
+}
+.search_input:hover {
+  transform: scale(1.01);
+}
+.searchPage_options {
+  width: 80vw;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.options_left,
+.options_right {
+  display: flex;
+  align-items: center;
+}
+.searchPage_option {
+  display: flex;
+}
+.searchPage_option {
+  margin-top: 30px;
+  color: gray;
+  margin-left: 20px;
+}
+.searchPage_option a {
+  text-decoration: none;
+  color: gray;
+  margin-left: 3px;
+}
+.searchPage_count {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.searchPage_results {
+  padding-top: 150px;
+  width: 40vw;
+  margin-left: 180px;
+}
+.searchPage_result {
+  padding-bottom: 20px;
+}
+.searchPage_resultTitle {
+  text-decoration: none;
+}
+.searchPage_resultTitle h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1060px) {
+  .searchPage_header .search_input {
+    width: 60vw !important;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .searchPage_header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .searchPage_logo {
+    width: 50vw;
+    object-fit: contain;
+    margin-top: 30px;
+  }
+  .searchPage_header .search_input {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    height: 25px;
+    width: 80vw !important;
+    max-width: unset;
+
+    margin-bottom: 6px;
+  }
+  .searchPage_headerbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .search_input input {
+    padding: 10px 5px;
+  }
+  .searchPage_option a {
+    font-size: 12px;
+  }
+  .searchPage_option .searchPage_icon {
+    display: none;
+  }
+  .searchPage_options {
+    width: 100vw;
+    overflow-x: scroll;
+  }
+  .searchPage_options::-webkit-scrollbar {
+    height: 0px;
+  }
+  .searchPage_results {
+    width: 85vw;
+    padding-top: 250px;
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+  p {
+    font-size: 12px;
+  }
+  a {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 15px;
+    font-weight: lighter;
+  }
+}

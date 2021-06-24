@@ -1,6 +1,8 @@
 # react-google-clone
+###This is a realtime google clone using [google custom search api](https://developers.google.com/custom-search/v1/introduction).
+###Redux is used for state management and the app is deployed on firebase.
+###check it out [here](https://clone-6af3b.web.app/).
 
-# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
